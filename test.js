@@ -82,8 +82,6 @@ function runTest(changelogFilenameRegex, description) {
       ' changelog ',
       'changelog\n'
     ].forEach(str => t.is(changelogFilenameRegex.exec(str), null));
-
-    t.end();
   });
 }
 

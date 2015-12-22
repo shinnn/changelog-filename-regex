@@ -6,7 +6,7 @@
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
   "scripts": {
     "pretest": "eslint --config @shinnn/node index.js test.js",
-    "test": "ava test.js"
+    "test": "ava --verbose test.js"
   },
   "license": "MIT",
   "files": [
@@ -32,7 +32,7 @@
   ],
   "devDependencies": {
     "@shinnn/eslint-config-node": "^1.0.1",
-    "ava": "^0.5.0",
-    "eslint": "^1.9.0"
+    "ava": "^0.9.1",
+    "eslint": "^1.10.3"
   }
 }
