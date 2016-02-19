@@ -2,10 +2,8 @@
 
 const test = require('ava');
 
-let matched;
-
 function runTest(changelogFilenameRegex, description) {
-  test(`${description} exposes a regex that matches CHANGELOG filenames.`, t => {
+  test(`${description} exposes a regex that matches CHANGELOG-ish filenames.`, t => {
     [
       'updates',
       'updatelog',
@@ -49,11 +47,7 @@ function runTest(changelogFilenameRegex, description) {
       'changelog.TXT',
       'changelog.TXT'
     ].forEach(str => {
-      t.not(matched = changelogFilenameRegex.exec(str), null);
-
-      if (matched) {
-        t.same(Array.from(matched), [str]);
-      }
+      t.same(Array.from(changelogFilenameRegex.exec(str)), [str]);
     });
 
     [
