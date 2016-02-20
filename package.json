@@ -9,8 +9,10 @@
     "test": "ava --verbose test.js"
   },
   "license": "MIT",
+  "jsnext:main": "index.jsnext.js",
   "files": [
-    "index.js"
+    "index.js",
+    "index.jsnext.js"
   ],
   "keywords": [
     "regex",
@@ -33,6 +35,8 @@
   "devDependencies": {
     "@shinnn/eslint-config-node": "^2.0.0",
     "ava": "^0.12.0",
-    "eslint": "^2.2.0"
+    "eslint": "^2.2.0",
+    "require-from-string": "^1.1.0",
+    "rollup": "^0.25.4"
   }
 }

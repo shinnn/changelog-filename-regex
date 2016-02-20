@@ -1,5 +1,7 @@
 'use strict';
 
+const requireFromString = require('require-from-string');
+const rollup = require('rollup');
 const test = require('ava');
 
 function runTest(changelogFilenameRegex, description) {
@@ -46,9 +48,7 @@ function runTest(changelogFilenameRegex, description) {
       'changelog.1',
       'changelog.TXT',
       'changelog.TXT'
-    ].forEach(str => {
-      t.same(Array.from(changelogFilenameRegex.exec(str)), [str]);
-    });
+    ].forEach(str => t.same(Array.from(changelogFilenameRegex.exec(str)), [str]));
 
     [
       'foo',
@@ -85,3 +85,7 @@ global.window = {};
 require('./' + require('./bower.json').main);
 
 runTest(global.window.changelogFilenameRegex, 'window.changelogFilenameRegex');
+
+rollup.rollup({entry: require('./package.json')['jsnext:main']}).then(bundle => {
+  runTest(requireFromString(bundle.generate({format: 'cjs'}).code), 'Module exports');
+});
