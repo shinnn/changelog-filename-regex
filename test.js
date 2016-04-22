@@ -48,7 +48,7 @@ function runTest(changelogFilenameRegex, description) {
       'changelog.1',
       'changelog.TXT',
       'changelog.TXT'
-    ].forEach(str => t.same(Array.from(changelogFilenameRegex.exec(str)), [str]));
+    ].forEach(str => t.deepEqual(Array.from(changelogFilenameRegex.exec(str)), [str]));
 
     [
       'foo',
