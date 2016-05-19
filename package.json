@@ -5,7 +5,7 @@
   "repository": "shinnn/changelog-filename-regex",
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
   "scripts": {
-    "pretest": "eslint --config @shinnn/node index.js test.js",
+    "pretest": "eslint --fix --config @shinnn/node --global window --ignore-path .gitignore .",
     "test": "ava --verbose test.js"
   },
   "license": "MIT",
