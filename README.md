@@ -3,7 +3,7 @@
 [![NPM version](https://img.shields.io/npm/v/changelog-filename-regex.svg)](https://www.npmjs.com/package/changelog-filename-regex)
 [![Bower version](https://img.shields.io/bower/v/changelog-filename-regex.svg)](https://github.com/shinnn/changelog-filename-regex/releases)
 [![Build Status](https://travis-ci.org/shinnn/changelog-filename-regex.svg?branch=master)](https://travis-ci.org/shinnn/changelog-filename-regex)
-[![devDependency Status](https://david-dm.org/shinnn/changelog-filename-regex/dev-status.svg)](https://david-dm.org/shinnn/changelog-filename-regex#info=devDependencies)
+[![devDependencies Status](https://david-dm.org/shinnn/changelog-filename-regex/dev-status.svg)](https://david-dm.org/shinnn/changelog-filename-regex?type=dev)
 
 A [regular expression](http://www.ecma-international.org/ecma-262/5.1/#sec-15.10) that matches a CHANGELOG filename
 
