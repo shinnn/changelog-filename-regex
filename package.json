@@ -33,10 +33,10 @@
     "client-side"
   ],
   "devDependencies": {
-    "@shinnn/eslint-config-node": "^2.0.0",
-    "ava": "^0.15.1",
-    "eslint": "^2.11.1",
+    "@shinnn/eslint-config-node": "^3.0.0",
+    "ava": "^0.16.0",
+    "eslint": "^3.3.1",
     "require-from-string": "^1.2.0",
-    "rollup": "^0.26.3"
+    "rollup": "^0.34.10"
   }
 }
