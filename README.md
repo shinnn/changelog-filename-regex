@@ -24,7 +24,7 @@ changelogFilenameRegex.test('README.txt'); //=> false
 npm install changelog-filename-regex
 ```
 
-#### [Bower](http://bower.io/)
+#### [Bower](https://bower.io/)
 
 ```
 bower install changelog-filename-regex
@@ -56,8 +56,8 @@ changelogFilenameRegex.test('History.rdoc');
 changelogFilenameRegex.test('LICENSE');
 changelogFilenameRegex.test('change.log');
 changelogFilenameRegex.test('CHANGE\nLOG');
-changelogFilenameRegex.test('ChangeLog');
 changelogFilenameRegex.test('  changelog  ');
+changelogFilenameRegex.test('\u0000ChangeLog');
 changelogFilenameRegex.test('CHANGELOG.');
 ```
 
