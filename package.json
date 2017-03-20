@@ -10,6 +10,7 @@
   },
   "license": "MIT",
   "jsnext:main": "index.jsnext.js",
+  "module": "index.jsnext.js",
   "files": [
     "index.js",
     "index.jsnext.js"
