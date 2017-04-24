@@ -1,6 +1,6 @@
 {
   "name": "changelog-filename-regex",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A regular expression that matches a CHANGELOG filename",
   "repository": "shinnn/changelog-filename-regex",
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
@@ -35,10 +35,10 @@
   ],
   "devDependencies": {
     "@shinnn/eslint-config-node": "^3.0.0",
-    "ava": "^0.17.0",
-    "eslint": "^3.13.1",
+    "ava": "^0.19.1",
+    "eslint": "^3.19.0",
     "require-from-string": "^1.2.1",
-    "rollup": "^0.41.4"
+    "rollup": "^0.41.6"
   },
   "eslintConfig": {
     "extends": "@shinnn/node",
