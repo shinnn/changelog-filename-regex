@@ -1,11 +1,9 @@
 # changelog-filename-regex
 
-[![NPM version](https://img.shields.io/npm/v/changelog-filename-regex.svg)](https://www.npmjs.com/package/changelog-filename-regex)
-[![Bower version](https://img.shields.io/bower/v/changelog-filename-regex.svg)](https://github.com/shinnn/changelog-filename-regex/releases)
+[![npm version](https://img.shields.io/npm/v/changelog-filename-regex.svg)](https://www.npmjs.com/package/changelog-filename-regex)
 [![Build Status](https://travis-ci.org/shinnn/changelog-filename-regex.svg?branch=master)](https://travis-ci.org/shinnn/changelog-filename-regex)
-[![devDependencies Status](https://david-dm.org/shinnn/changelog-filename-regex/dev-status.svg)](https://david-dm.org/shinnn/changelog-filename-regex?type=dev)
 
-A [regular expression](http://www.ecma-international.org/ecma-262/5.1/#sec-15.10) that matches a CHANGELOG filename
+A [regular expression](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp) that matches a CHANGELOG filename
 
 ```javascript
 const changelogFilenameRegex = require('changelog-filename-regex');
@@ -16,34 +14,24 @@ changelogFilenameRegex.test('README.txt'); //=> false
 
 ## Installation
 
-### Package managers
-
-#### [npm](https://www.npmjs.com/)
+[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/getting-started/what-is-npm).
 
 ```
 npm install changelog-filename-regex
 ```
 
-#### [Bower](https://bower.io/)
-
-```
-bower install changelog-filename-regex
-```
-
-### Standalone
-
-[Download the script file directly.](https://raw.githubusercontent.com/shinnn/changelog-filename-regex/master/browser.js)
-
 ## API
+
+```javascript
+import changelogFilenameRegex from 'changelog-filename-regex';
+```
 
 ### changelogFilenameRegex
 
-Type: [RegExp](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
+Type: [`RegExp`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
 
 ```javascript
-const changelogFilenameRegex = require('changelog-filename-regex');
-
-// Return `true`
+// Returns `true`
 changelogFilenameRegex.test('CHANGELOG');
 changelogFilenameRegex.test('CHANGELOG.txt');
 changelogFilenameRegex.test('CHANGELOG.md');
@@ -52,7 +40,7 @@ changelogFilenameRegex.test('Release Note');
 changelogFilenameRegex.test('UPDATES');
 changelogFilenameRegex.test('History.rdoc');
 
-// Return `false`
+// Returns `false`
 changelogFilenameRegex.test('LICENSE');
 changelogFilenameRegex.test('change.log');
 changelogFilenameRegex.test('CHANGE\nLOG');
@@ -63,6 +51,6 @@ changelogFilenameRegex.test('CHANGELOG.');
 
 ## License
 
-Copyright (c) 2015 - 2016 [Shinnosuke Watanabe](https://github.com/shinnn)
+Copyright (c) 2015 - 2018 [Shinnosuke Watanabe](https://github.com/shinnn)
 
 Licensed under [the MIT License](./LICENSE).

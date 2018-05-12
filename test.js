@@ -81,11 +81,6 @@ function runTest(changelogFilenameRegex, description) {
 
 runTest(require('.'), 'require(\'changelog-filename-regex\')');
 
-global.window = {};
-require('./' + require('./bower.json').main);
-
-runTest(global.window.changelogFilenameRegex, 'window.changelogFilenameRegex');
-
 rollup.rollup({entry: require('./package.json')['jsnext:main']}).then(bundle => {
   runTest(requireFromString(bundle.generate({format: 'cjs'}).code), 'Module exports');
 });
