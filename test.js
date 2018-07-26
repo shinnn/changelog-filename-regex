@@ -1,6 +1,7 @@
 'use strict';
 
 const changelogFilenameRegex = require('.');
+const {optimize} = require('regexp-tree');
 const test = require('ava');
 
 test('match CHANGELOG-ish filenames.', t => {
@@ -81,4 +82,8 @@ test('don\'t match non-CHANGELOG filenames.', t => {
 	]) {
 		t.is(changelogFilenameRegex.exec(str), null);
 	}
+});
+
+test('well optimized.', t => {
+	t.is(optimize(changelogFilenameRegex).toRegExp().source, changelogFilenameRegex.source);
 });
