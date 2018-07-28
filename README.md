@@ -12,6 +12,8 @@ changelogFilenameRegex.test('CHANGELOG.md'); //=> true
 changelogFilenameRegex.test('README.txt'); //=> false
 ```
 
+*In most cases there is no need to use this regular expression directly. Developers would rather use [is-changelog-path](https://github.com/shinnn/is-changelog-path).*
+
 ## Installation
 
 [Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/getting-started/what-is-npm).
