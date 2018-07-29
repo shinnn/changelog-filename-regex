@@ -5,7 +5,7 @@
 	"repository": "shinnn/changelog-filename-regex",
 	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
 	"scripts": {
-		"prebuild": "eslint --fix --format=codeframe index.mjs test.js",
+		"prebuild": "eslint .",
 		"build": "rollup --config=node:module",
 		"pretest": "npm run-script build",
 		"test": "ava"
@@ -35,11 +35,11 @@
 		"client-side"
 	],
 	"devDependencies": {
-		"@shinnn/eslint-config-node": "^5.0.0",
-		"ava": "^1.0.0-beta.4",
-		"eslint": "^4.19.1",
-		"regexp-tree": "0.0.85",
-		"rollup": "^0.59.1",
+		"@shinnn/eslint-config-node": "^6.0.0",
+		"ava": "^1.0.0-beta.6",
+		"eslint": "^5.2.0",
+		"regexp-tree": "^0.0.85",
+		"rollup": "^0.63.4",
 		"rollup-config-module": "^2.0.0"
 	},
 	"eslintConfig": {
