@@ -1,8 +1,7 @@
 # changelog-filename-regex
 
 [![npm version](https://img.shields.io/npm/v/changelog-filename-regex.svg)](https://www.npmjs.com/package/changelog-filename-regex)
-[![Build Status](https://travis-ci.org/shinnn/changelog-filename-regex.svg?branch=master)](https://travis-ci.org/shinnn/changelog-filename-regex)
-
+[![Build Status](https://travis-ci.com/shinnn/changelog-filename-regex.svg?branch=master)](https://travis-ci.com/shinnn/changelog-filename-regex)
 A [regular expression](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp) that matches a CHANGELOG filename
 
 ```javascript
@@ -16,7 +15,7 @@ changelogFilenameRegex.test('README.txt'); //=> false
 
 ## Installation
 
-[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/getting-started/what-is-npm).
+[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/about-npm/).
 
 ```
 npm install changelog-filename-regex
