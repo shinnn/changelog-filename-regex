@@ -2,6 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/changelog-filename-regex.svg)](https://www.npmjs.com/package/changelog-filename-regex)
 [![Build Status](https://travis-ci.com/shinnn/changelog-filename-regex.svg?branch=master)](https://travis-ci.com/shinnn/changelog-filename-regex)
+
 A [regular expression](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp) that matches a CHANGELOG filename
 
 ```javascript
