@@ -53,4 +53,4 @@ changelogFilenameRegex.test('CHANGELOG.');
 
 ## License
 
-[ISC License](./LICENSE) © 2018 Shinnosuke Watanabe
+[ISC License](./LICENSE) © 2018 - 2019 Shinnosuke Watanabe
