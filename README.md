@@ -1,7 +1,7 @@
 # changelog-filename-regex
 
 [![npm version](https://img.shields.io/npm/v/changelog-filename-regex.svg)](https://www.npmjs.com/package/changelog-filename-regex)
-[![Build Status](https://travis-ci.com/shinnn/changelog-filename-regex.svg?branch=master)](https://travis-ci.com/shinnn/changelog-filename-regex)
+[![Github Actions](https://action-badges.now.sh/shinnn/changelog-filename-regex)](https://wdp9fww0r9.execute-api.us-west-2.amazonaws.com/production/results/shinnn/changelog-filename-regex)
 
 A [regular expression](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp) that matches a CHANGELOG filename
 
@@ -12,7 +12,7 @@ changelogFilenameRegex.test('CHANGELOG.md'); //=> true
 changelogFilenameRegex.test('README.txt'); //=> false
 ```
 
-*In most cases there is no need to use this regular expression directly. Developers would rather use [is-changelog-path](https://github.com/shinnn/is-changelog-path).*
+*In most cases users don't need to install this module directly, but would rather use [is-changelog-path](https://github.com/shinnn/is-changelog-path).*
 
 ## Installation
 
